@@ -12,6 +12,9 @@
         echo 'la mail è valida';
     };
 //che age sia un numero.
+    if( is_numeric($age)){
+        echo 'l\' età è valida';
+    };
 //stampare “Accesso riuscito”, altrimenti “Accessonegato”
 ?>
 <?php
