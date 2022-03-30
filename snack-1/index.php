@@ -5,21 +5,22 @@ $partite = [
     'casa' => 'Basket Lazio',
     'ospite' => 'Basket Roma',
     'punti_casa' => 45,
-    'punti_opsite' => 52,
+    'punti_ospite' => 52,
     ],
     [
     'casa' => 'Basket Catania',
     'ospite' => 'Basket Palermo',
     'punti_casa' => 60,
-    'punti_opsite' => 79,
+    'punti_ospite' => 79,
     ],
     [
     'casa' => 'Basket Milano',
     'ospite' => 'Basket Internazionale Milano',
     'punti_casa' => 75,
-    'punti_opsite' => 72,
+    'punti_ospite' => 72,
     ]
     ];
+    //var_dump($partite);
 ?>
 <?php
 //stampare a schermo con un ciclo for nel seguente schema: Olimpia Milano- Cantù | 55-60
@@ -36,10 +37,15 @@ $partite = [
     <ul>
         <?php
         for($i = 0; $i < count($partite); $i++){
+            $partita = $partite [$i];
             ?>
-            <li>Lazio - Roma | 45-52</li>
+            <li>
+                <?php
+                    echo "{$partita ['casa']} - {$partita ['ospite']} | {$partita ['punti_casa']}-{$partita ['punti_ospite']}";
+                ?>
+            </li>
             <?php
-        }
+        };
         ?>
         
     </ul>
