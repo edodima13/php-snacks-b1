@@ -43,6 +43,10 @@ $posts = [
 
 foreach($posts as $key => $value){
     echo $key.':<br>';
-    
+    foreach($value as $key => $post){
+        foreach($post as $key => $val){
+            echo "$key: $val <br>";
+        };
+    };
 };
 ?>
