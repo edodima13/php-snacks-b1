@@ -8,6 +8,9 @@
         echo 'il nome è valido';
     };
 //che mail contenga un punto e una chiocciola ,
+    if( strpos($mail,'.') == true && strpos($mail,'@') == true){
+        echo 'la mail è valida';
+    };
 //che age sia un numero.
 //stampare “Accesso riuscito”, altrimenti “Accessonegato”
 ?>
