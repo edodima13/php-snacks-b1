@@ -2,22 +2,22 @@
 //creare un array contenenti delle partite di basket
 $partite = [
     [
-    'casa' => 'Basket Milano',
-    'opsite' => 'Basket Roma',
+    'casa' => 'Basket Lazio',
+    'ospite' => 'Basket Roma',
     'punti_casa' => 45,
-    'punti_opsite' => 21,
+    'punti_opsite' => 52,
     ],
     [
     'casa' => 'Basket Catania',
-    'opsite' => 'Basket Palermo',
-    'punti_casa' => 45,
-    'punti_opsite' => 21,
+    'ospite' => 'Basket Palermo',
+    'punti_casa' => 60,
+    'punti_opsite' => 79,
     ],
     [
-    'casa' => 'Basket ',
-    'opsite' => 'Basket Roma',
-    'punti_casa' => 45,
-    'punti_opsite' => 21,
+    'casa' => 'Basket Milano',
+    'ospite' => 'Basket Internazionale Milano',
+    'punti_casa' => 75,
+    'punti_opsite' => 72,
     ]
     ];
 ?>
@@ -33,6 +33,15 @@ $partite = [
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+        <?php
+        for($i = 0; $i < count($partite); $i++){
+            ?>
+            <li>Lazio - Roma | 45-52</li>
+            <?php
+        }
+        ?>
+        
+    </ul>
 </body>
 </html>
